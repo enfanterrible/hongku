@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block body %}
+
+Form
+<form method="Post">
+	<input type="text" name="username"> </input>
+	<input type="password" name="password"> </input>
+	<textarea name="text"></textarea>
+	<input type="submit"><input>
+
+</form>
+
+{% end block %}

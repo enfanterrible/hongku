@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>
+			i am a title
+		</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<form method="POST" id="frm">
+			<input type = "text" name="id" id="id">
+			<input type = "password" name="password" id="id">
+			<input type = "button" onclick="submit_chk" value="submit">
+		</form>
+		<script>
+			function submit_chk()
+			{
+				var ID= document.getElementById("id").value;
+				var password = document.getElementById("password").value;
+				var ID_OK=0;
+				var password_OK=0;
+				if(ID.length<4||ID.length>6)
+					alert("ID not proper in length");
+				else
+					ID_OK=1;
+				if(password.length<4||password.length>6)
+					alert("password not proper in length");
+				else
+					password_OK=1;
+				if(ID_OK==1&&password_OK==1)
+					return "Post done"
+			}	
+		</script>
+	</body>
+</html>

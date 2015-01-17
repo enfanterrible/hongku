@@ -1,0 +1,16 @@
+{% extends"base.html"%}
+{% block body %}	
+	Template File
+		{{name}}
+		<br><br>
+		<table border=1>
+		{% for i in articles %}
+		<tr>
+			<td>
+			{{i.name}}</td><td>{{i.age}}</td></tr>
+		{% endfor %}
+	</talbe>
+
+{% end block %}
+
+

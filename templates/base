@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			body {background-image:url('/static/img/kim.jpeg');}
+		</style>
+	</head>
+	<body>
+		{% block body %}{% endblock %}
+		<br><br><br>
+		
+		KUCC2014
+	</body>
+</html>
